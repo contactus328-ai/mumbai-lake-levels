@@ -1,5 +1,7 @@
 # Mumbai Lake Levels
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Tracks Mumbai's water supply system: the 7 lakes that supply the city, daily/hourly rainfall, and how demand compares to supply across residential, commercial, and industrial use.
 
 ## What this covers
