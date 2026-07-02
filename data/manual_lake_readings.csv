@@ -1,2 +1,36 @@
 date,lake_name,level_percent,content_million_litres,source
-2026-07-01,Tulsi,85.2,7500,manual_test
+2026-06-28,Upper Vaitarna,61.4,56689,sample_data
+2026-06-29,Upper Vaitarna,63.0,58143,sample_data
+2026-06-30,Upper Vaitarna,65.3,60289,sample_data
+2026-07-01,Upper Vaitarna,67.5,62291,sample_data
+2026-07-02,Upper Vaitarna,71.2,65715,sample_data
+2026-06-28,Modak Sagar,64.5,83050,sample_data
+2026-06-29,Modak Sagar,68.7,88425,sample_data
+2026-06-30,Modak Sagar,70.5,90692,sample_data
+2026-07-01,Modak Sagar,73.2,94251,sample_data
+2026-07-02,Modak Sagar,74.8,96297,sample_data
+2026-06-28,Middle Vaitarna,57.2,110614,sample_data
+2026-06-29,Middle Vaitarna,60.2,116451,sample_data
+2026-06-30,Middle Vaitarna,61.8,119508,sample_data
+2026-07-01,Middle Vaitarna,63.8,123565,sample_data
+2026-07-02,Middle Vaitarna,67.3,130241,sample_data
+2026-06-28,Tansa,67.1,97869,sample_data
+2026-06-29,Tansa,69.3,101020,sample_data
+2026-06-30,Tansa,72.6,105784,sample_data
+2026-07-01,Tansa,76.5,111510,sample_data
+2026-07-02,Tansa,78.0,113726,sample_data
+2026-06-28,Bhatsa,55.9,400928,sample_data
+2026-06-29,Bhatsa,59.5,426700,sample_data
+2026-06-30,Bhatsa,62.0,444774,sample_data
+2026-07-01,Bhatsa,64.0,458873,sample_data
+2026-07-02,Bhatsa,68.4,490218,sample_data
+2026-06-28,Vihar,72.5,20084,sample_data
+2026-06-29,Vihar,74.3,20576,sample_data
+2026-06-30,Vihar,76.1,21072,sample_data
+2026-07-01,Vihar,80.1,22192,sample_data
+2026-07-02,Vihar,83.4,23109,sample_data
+2026-06-28,Tulsi,77.9,6255,sample_data
+2026-06-29,Tulsi,81.6,6551,sample_data
+2026-06-30,Tulsi,84.7,6800,sample_data
+2026-07-01,Tulsi,89.1,7155,sample_data
+2026-07-02,Tulsi,91.8,7367,sample_data
