@@ -5,6 +5,8 @@
 [![GitHub issues](https://img.shields.io/github/issues/contactus328-ai/mumbai-lake-levels)](https://github.com/contactus328-ai/mumbai-lake-levels/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/contactus328-ai/mumbai-lake-levels)](https://github.com/contactus328-ai/mumbai-lake-levels/pulls)
 
+**[Live demo](https://contactus328-aii-3bqsuqesy8agfxnu7nuvua.streamlit.app/)** — hosted on Streamlit Community Cloud.
+
 Tracks Mumbai's water supply system: the 7 lakes that supply the city, daily/hourly rainfall, and how demand compares to supply across residential, commercial, and industrial use.
 
 ## What this covers
@@ -63,10 +65,12 @@ streamlit run src/lakelevels/dashboard.py
 
 ## Deploying the dashboard
 
+Already deployed at **https://contactus328-aii-3bqsuqesy8agfxnu7nuvua.streamlit.app/**.
+
 GitHub Pages only serves static files, so it can't host the Streamlit app
-directly (it needs a running Python process). Use
+directly (it needs a running Python process). This project uses
 [Streamlit Community Cloud](https://share.streamlit.io) instead — it's free
-and deploys straight from this repo:
+and deploys straight from this repo. To redeploy or set up your own instance:
 
 [![Deploy to Streamlit Cloud](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/deploy?repository=contactus328-ai/mumbai-lake-levels&branch=main&mainModule=src/lakelevels/dashboard.py)
 
