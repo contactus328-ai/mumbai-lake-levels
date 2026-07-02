@@ -2,6 +2,8 @@
 
 [![Tests](https://github.com/contactus328-ai/mumbai-lake-levels/actions/workflows/tests.yml/badge.svg)](https://github.com/contactus328-ai/mumbai-lake-levels/actions/workflows/tests.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/contactus328-ai/mumbai-lake-levels)](https://github.com/contactus328-ai/mumbai-lake-levels/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/contactus328-ai/mumbai-lake-levels)](https://github.com/contactus328-ai/mumbai-lake-levels/pulls)
 
 Tracks Mumbai's water supply system: the 7 lakes that supply the city, daily/hourly rainfall, and how demand compares to supply across residential, commercial, and industrial use.
 
