@@ -25,8 +25,11 @@ The scraper and API client are both implemented and will be used automatically w
 ```bash
 python -m venv .venv
 .venv\Scripts\activate        # Windows
-pip install -e .
+pip install -e .              # or: pip install -r requirements.txt
 cp .env.example .env          # add IMD_API_KEY if you have one
+
+# verify core deps actually installed before relying on them
+python -c "import requests, bs4, dotenv; print('core deps OK')"
 ```
 
 ## Usage
