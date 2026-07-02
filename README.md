@@ -46,6 +46,10 @@ python -m lakelevels.cli report
 
 # launch the visual dashboard
 pip install -e ".[dashboard]"
+
+# verify the dashboard extras actually installed before relying on them
+python -c "import streamlit, pandas, altair; print('dashboard deps OK')"
+
 streamlit run src/lakelevels/dashboard.py
 ```
 
