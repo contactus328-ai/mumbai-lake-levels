@@ -1,0 +1,38 @@
+{
+  "_meta": {
+    "description": "Static reference data on Mumbai's water supply system. Update as new official figures are published.",
+    "sources": [
+      "BMC (Brihanmumbai Municipal Corporation) Hydraulic Engineering Department, https://mcgm.gov.in",
+      "https://memumbai.com/lakes-and-dams-supplying-water-to-mumbai/",
+      "https://www.freepressjournal.in/mumbai (BMC lake stock reporting)"
+    ],
+    "last_updated": "2026-07-02"
+  },
+  "lakes": [
+    {"name": "Upper Vaitarna", "system": "Vaitarna", "district": "Nashik", "supplies": "Western suburbs & island city", "in_mumbai_city": false},
+    {"name": "Modak Sagar", "system": "Vaitarna", "district": "Palghar", "supplies": "Western suburbs & island city", "in_mumbai_city": false},
+    {"name": "Middle Vaitarna", "system": "Vaitarna", "district": "Palghar", "supplies": "Western suburbs & island city", "in_mumbai_city": false},
+    {"name": "Tansa", "system": "Vaitarna", "district": "Palghar", "supplies": "Western suburbs & island city", "in_mumbai_city": false},
+    {"name": "Bhatsa", "system": "Bhatsa", "district": "Thane", "supplies": "Eastern suburbs", "in_mumbai_city": false},
+    {"name": "Vihar", "system": "Local", "district": "Mumbai (city)", "supplies": "Island city", "in_mumbai_city": true},
+    {"name": "Tulsi", "system": "Local", "district": "Mumbai (city)", "supplies": "Island city", "in_mumbai_city": true}
+  ],
+  "lake_count": 7,
+  "water_balance_mld": {
+    "note": "MLD = Million Litres per Day. Figures are approximate, as reported by BMC in press coverage; exact daily draw varies with system losses and season.",
+    "daily_demand_mld": 4200,
+    "daily_supply_mld": 3850,
+    "seven_lakes_daily_draw_mld": 4100
+  },
+  "usage_breakdown_percent": {
+    "note": "Approximate sector-wise split of Mumbai's piped water consumption, commonly cited in BMC/press reporting. Treat as indicative, not an official audited figure -- update if BMC publishes a precise breakdown.",
+    "residential": 70,
+    "commercial": 15,
+    "industrial": 10,
+    "other_public_use": 5
+  },
+  "required_stock_for_year_ml": {
+    "note": "Total useful lake stock (in million litres) BMC targets by ~Oct 1 (end of monsoon) to cover supply through the following monsoon.",
+    "target_ml": 1447000
+  }
+}
