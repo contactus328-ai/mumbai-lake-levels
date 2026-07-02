@@ -61,6 +61,26 @@ python -c "import streamlit, pandas, altair; print('dashboard deps OK')"
 streamlit run src/lakelevels/dashboard.py
 ```
 
+## Deploying the dashboard
+
+GitHub Pages only serves static files, so it can't host the Streamlit app
+directly (it needs a running Python process). Use
+[Streamlit Community Cloud](https://share.streamlit.io) instead — it's free
+and deploys straight from this repo:
+
+[![Deploy to Streamlit Cloud](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/deploy?repository=contactus328-ai/mumbai-lake-levels&branch=main&mainModule=src/lakelevels/dashboard.py)
+
+1. Sign in at [share.streamlit.io](https://share.streamlit.io) with GitHub.
+2. Click "New app", select this repo and the `main` branch.
+3. Set the main file path to `src/lakelevels/dashboard.py`.
+4. (Optional) In the app's "Secrets", add `IMD_API_KEY` if you have one.
+5. Deploy. `requirements.txt` installs the app itself (`-e .`) plus its
+   dependencies, so no extra config is needed.
+
+The cloud instance starts with an empty database (`lakelevels.db` is
+gitignored) — `dashboard.py` seeds it from `data/manual_lake_readings.csv`
+and `data/manual_rainfall_readings.csv` automatically on first load.
+
 ## Adding manual readings
 
 Append rows to the CSVs in `data/`:

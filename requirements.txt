@@ -1,3 +1,8 @@
+# Installs the lakelevels package itself (editable) so `import lakelevels`
+# works, e.g. on Streamlit Community Cloud, which only runs `pip install -r
+# requirements.txt` and wouldn't otherwise pick up the local package.
+-e .
+
 requests>=2.31
 beautifulsoup4>=4.12
 python-dotenv>=1.0

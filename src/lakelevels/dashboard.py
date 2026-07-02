@@ -3,6 +3,7 @@ import pandas as pd
 import streamlit as st
 
 from lakelevels import db, reference
+from lakelevels.sources import manual
 
 st.set_page_config(page_title="Mumbai Lake Levels", layout="wide")
 st.title("Mumbai Water Supply Dashboard")
@@ -11,6 +12,17 @@ db.init_db()
 with db.get_connection() as conn:
     lake_rows = db.latest_lake_readings(conn)
     rain_rows = db.latest_rainfall_readings(conn, limit=48)
+
+    # A fresh deploy (e.g. Streamlit Community Cloud) starts with an empty
+    # database since lakelevels.db is gitignored -- seed it from the manual
+    # CSVs so the dashboard isn't blank on first load.
+    if not lake_rows and not rain_rows:
+        for r in manual.read_manual_lake_readings():
+            db.insert_lake_reading(conn, r)
+        for r in manual.read_manual_rainfall_readings():
+            db.insert_rainfall_reading(conn, r)
+        lake_rows = db.latest_lake_readings(conn)
+        rain_rows = db.latest_rainfall_readings(conn, limit=48)
 
 col1, col2 = st.columns(2)
 
